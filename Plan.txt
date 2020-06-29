@@ -1,0 +1,24 @@
+This program is meant to be the base for an eventual single-player RPG.
+
+For now, it will be made as a very basic text-based exploration puzzle game with
+a separate world/room creation kit.
+
+This will actually be the 4th iteration that will be including a basic GUI,
+mostly for the strict purpose of attempting multi-threading.
+
+Object Types:
+ Creature, base class for living entities
+    PC, the one and only player character
+
+    NPCs, all other creatures (Not likely to be included in this version)
+
+ Item, the main object that will make most things interactable within the game
+    Containers, any item that is capable of having an inventory
+
+    Puzzles, special interactable items (Possibly including doors)
+
+    Generic, Any other item that doesn't have special interactions
+
+ Room, specific locations within the world that holds creatures and items
+
+ World, a collection of rooms
