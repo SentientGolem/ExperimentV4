@@ -20,6 +20,10 @@ class ReferenceApp:
 
         ttk.Button(master, text = "Picture", command = self.refer_picture).grid(row = 3, column = 0)
 
+        self.button = ttk.Button(master, text = "GENOCIDE", command = self.genocide, state = 'disabled')
+        #self.button.config(image = self.image, compound = 'center')
+        self.button.grid(row = 3, column = 1)
+
     def refer_button(self):
         self.labelRefer.config(text = "A button is a clicky thing that does stuff when clicked!", image = "")
 
@@ -28,6 +32,9 @@ class ReferenceApp:
 
     def refer_picture(self):
         self.labelRefer.config(image = self.image, text = "LOOKIT THIS BUTTON", compound = "center")
+
+    def genocide(self):
+        self.labelRefer.config(text = "EXTERMINATE, EXTERMINATE, EXTERMINAAAAATE", image = "")
 
 def main():
 
